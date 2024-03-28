@@ -1,10 +1,20 @@
 <template>
   <div>
     <NuxtLayout>
-      <NuxtPage/>
+      <NuxtPage></NuxtPage>
     </NuxtLayout>
   </div>
 </template>
 <script setup lang="ts">
-import BContainer from "~/components/layouts/BContainer.vue";
+/*const colorMode = useColorMode()
+const isDark = computed({
+  get () {
+    return colorMode.value === 'dark'
+  },
+  set () {
+    colorMode.preference =  'light'
+  }
+})
+
+  isDark();*/
 </script>
