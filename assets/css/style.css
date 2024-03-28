@@ -1,0 +1,9 @@
+.streaming-now{
+    -webkit-text-stroke: 3px #c688e8;
+    color:transparent;
+    font-weight: bold;
+    opacity: 0.6;
+}
+.header-movie-title{
+    letter-spacing: 6px;
+}
