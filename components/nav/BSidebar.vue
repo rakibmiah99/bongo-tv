@@ -41,7 +41,7 @@ const links = [
 const ui = {
   wrapper: 'relative',
   after: '',
-  base:'hover:text-purple-950 cursor-pointer uppercase ',
+  base:'hover:text-violet-950 cursor-pointer uppercase ',
   before: '',
   divider: {
     wrapper: {
@@ -55,7 +55,7 @@ const ui = {
     <div class="p-4 flex-1">
       <UVerticalNavigation :ui="ui" :links="links" >
         <template #default="{ link }">
-          <span class="hover:text-indigo-950 relative">{{ link.label }}</span>
+          <span class="hover:text-violet-950 relative">{{ link.label }}</span>
         </template>
       </UVerticalNavigation>
     </div>

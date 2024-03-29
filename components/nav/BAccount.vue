@@ -36,8 +36,7 @@ const ui = {
   <div class="flex items-center">
     <UHorizontalNavigation :ui="ui" :links="links" >
       <template #default="{ link }">
-        <span class="hover:text-indigo-950 hover:after:bg-none relative">{{ link.label }} </span>
-<!--        <Profile v-show="link.type === 'profile'"/>-->
+        <span class="hover:text-violet-950 hover:after:bg-none relative">{{ link.label }} </span>
       </template>
     </UHorizontalNavigation>
     <Profile/>

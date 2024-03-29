@@ -7,7 +7,7 @@
         <!--LOGO-->
         <div class="brand">
           <h1 class="text-2xl uppercase font-bold">
-            <span class="text-purple-950">Bong</span>
+            <span class="text-violet-950">Bong</span>
             Play
           </h1>
         </div>

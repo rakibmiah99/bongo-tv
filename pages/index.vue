@@ -4,7 +4,7 @@
     <UContainer>
       <div class="mb-6 flex justify-between items-center">
         <h1 class="text-2xl">MOVIES YOU MUST WATCH</h1>
-        <UButton icon="i-heroicons-queue-list" color="indigo" variant="soft">Show All</UButton>
+        <UButton icon="i-heroicons-queue-list" color="violet" variant="soft">Show All</UButton>
       </div>
       <Carousel v-bind="settings" :breakpoints="breakpoints" >
         <Slide v-for="slide in 10" :key="slide">
@@ -21,7 +21,7 @@
     <UContainer>
       <div class="mb-6 flex justify-between items-center">
         <h1 class="text-2xl">MOVIES YOU MUST WATCH</h1>
-        <UButton icon="i-heroicons-queue-list" color="indigo" variant="soft">Show All</UButton>
+        <UButton icon="i-heroicons-queue-list" color="violet" variant="soft">Show All</UButton>
       </div>
       <Carousel v-bind="settings" :breakpoints="breakpoints" >
         <Slide v-for="slide in 10" :key="slide">
@@ -38,7 +38,7 @@
     <UContainer>
       <div class="mb-6 flex justify-between items-center">
         <h1 class="text-2xl">MOVIES YOU MUST WATCH</h1>
-        <UButton icon="i-heroicons-queue-list" color="indigo" variant="soft">Show All</UButton>
+        <UButton icon="i-heroicons-queue-list" color="violet" variant="soft">Show All</UButton>
       </div>
       <Carousel v-bind="settings" :breakpoints="breakpoints" >
         <Slide v-for="slide in 10" :key="slide">
@@ -51,10 +51,17 @@
       </Carousel>
     </UContainer>
   </div>
+
+  <div class="py-8">
+    <BWatched/>
+  </div>
+
+  <Footer/>
 </template>
 
 <script setup>
 import BMovieCart from "~/components/utility/BMovieCart.vue";
+import Footer from "~/components/Footer.vue";
 const settings =  {
   itemsToShow: 1,
   snapAlign: 'center',

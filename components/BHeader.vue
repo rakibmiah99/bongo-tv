@@ -48,7 +48,7 @@
     <Carousel>
       <Slide v-for="slide in sliders" :key="slide">
         <div class="w-full  relative">
-          <div class="bg-no-repeat w-full h-[750px] absolute  bg-cover bg-blend-multiply bg-purple-400" :style="{'background-image': 'url('+slide.image+')', zIndex: '-1'}"></div>
+          <div class="bg-no-repeat w-full h-[750px] absolute  bg-cover bg-blend-multiply bg-violet-400" :style="{'background-image': 'url('+slide.image+')', zIndex: '-1'}"></div>
           <div class="z-20 mt-[150px] pb-[70px]">
             <UContainer>
               <div class="text-white">
@@ -66,7 +66,7 @@
                       Watch Bangla Series Syndicate Starring Afran Nisho, Tasnia Farin, Nazifa Tushi, Shatabdi Wadud, Rashed Mamun Apu, Nasir Uddin Khan on Chorki.
                     </p>
                     <div class="flex mt-5">
-                      <UButton icon="i-heroicons-play" color="indigo" class="uppercase me-3 bg-black px-5 py-3 rounded-none">Watch Now</UButton>
+                      <UButton icon="i-heroicons-play" color="violet" class="uppercase me-3 bg-black px-5 py-3 rounded-none">Watch Now</UButton>
                       <UButton icon="i-heroicons-bookmark" color="white" variant="outline"  class="uppercase  px-5 py-3 rounded-none"/>
                     </div>
                   </div>

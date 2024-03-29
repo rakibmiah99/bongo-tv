@@ -10,14 +10,14 @@ const image = "https://m.media-amazon.com/images/M/MV5BZTc1NDFlN2MtOWFjZi00ZWNmL
     <NuxtImg class="rounded-lg mt-1" :src="image"/>
     <div class="p-2">
       <p class="text-lg font-bold mt-1 text-left">Gunin</p>
-      <p class="text-purple-950 mt-1 text-left">2022</p>
+      <p class="text-violet-950 mt-1 text-left">2022</p>
       <div class="mt-1 flex justify-between">
         <BIMDB rating="8.5"></BIMDB>
         <div class="icons flex">
-          <UButton class="p-2" color="indigo" variant="ghost">
+          <UButton class="p-2" color="violet" variant="ghost">
             <UIcon name="i-heroicons-eye"></UIcon>
           </UButton>
-          <UButton class="p-2" color="indigo" variant="ghost">
+          <UButton class="p-2" color="violet" variant="ghost">
             <UIcon  name="i-heroicons-heart"></UIcon>
           </UButton>
         </div>
