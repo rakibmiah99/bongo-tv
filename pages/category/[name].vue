@@ -13,9 +13,10 @@
 <script setup>
 import Footer from "~/components/BFooter.vue";
 import {useCategoryWiseMovie} from "~/composables/useCategoryWiseMovie.js";
-import {getHomepageData} from "~/composables/api.js";
-const {categoryWiseMovieStore, makeCategoryWiseMovie} = useCategoryWiseMovie();
+import {getHomepageData, getCategoryPageData} from "~/composables/api.js";
+const route = useRoute();
 
-onMounted(() => getHomepageData())
+const {categoryWiseMovieStore, makeCategoryWiseMovie} = useCategoryWiseMovie();
+onMounted(() => getCategoryPageData(route.params.name))
 
 </script>

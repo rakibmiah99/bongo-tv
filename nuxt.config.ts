@@ -15,11 +15,17 @@ export default defineNuxtConfig({
     },
   },
   css: [
+      '~/assets/css/vendor/video_js.css',
       '~/assets/css/vendor/plyr.css',
       '~/assets/css/tailwind.css',
       '~/assets/css/style.css',
   ],
   colorMode: {
     preference: 'light'
+  },
+  runtimeConfig: {
+    public: {
+      BASE_URL: process.env.API_BASE_URL
+    }
   }
 })
