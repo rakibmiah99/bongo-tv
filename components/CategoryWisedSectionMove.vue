@@ -3,7 +3,7 @@
     <UContainer>
       <div class="mb-6 flex justify-between items-center">
         <h1 class="text-2xl">{{props.data.name}}</h1>
-        <UButton :to="props.data.slug" icon="i-heroicons-queue-list" color="violet" variant="soft">Show All</UButton>
+        <UButton :to="'/category/'+props.data.category_slug+'/' +props.data.slug" icon="i-heroicons-queue-list" color="violet" variant="soft">Show All</UButton>
       </div>
       <Carousel v-bind="settings" :breakpoints="breakpoints" >
         <Slide v-for="(movie, index) in props.data.movies" :key="index">
@@ -20,8 +20,6 @@
 <script setup>
 import BMovieCart from "~/components/utility/BMovieCart.vue";
 const props = defineProps(['data'])
-
-
 
 const settings =  {
   itemsToShow: 1,

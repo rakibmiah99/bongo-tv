@@ -7,6 +7,7 @@ export default defineNuxtConfig({
     '@nuxt/ui',
     'vue3-carousel-nuxt',
     '@nuxt/image',
+    '@vueuse/nuxt'
   ],
   postcss: {
     plugins: {

@@ -4,8 +4,8 @@ import BAccount from "~/components/nav/BAccount.vue";
 </script>
 
 <template>
-    <UContainer class="sticky top-0">
-      <div class="bg-white rounded-lg py-4 px-8">
+    <UContainer class="sticky top-0 z-50">
+      <div class="bg-white rounded-lg py-4 px-8  drop-shadow-xl">
         <div class="flex justify-between items-center">
           <!--            MENUS  -->
           <Menu/>

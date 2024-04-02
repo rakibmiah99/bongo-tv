@@ -2,6 +2,7 @@
 import BIMDB from "~/components/utility/BIMDB.vue";
 const {headerMovieStore} = useSliderHeaderMovie();
 const props = defineProps('movies');
+const {width, height} = useWindowSize()
 const img1 = 'https://hips.hearstapps.com/hmg-prod/images/how-does-netflix-s-the-gentlemen-tv-show-relate-to-the-original-film-1-65a6739711094.png?crop=0.9991645781119465xw:1xh;center,top&resize=1200:*';
 const image_thumbnail = 'https://scontent.fdac110-1.fna.fbcdn.net/v/t39.30808-6/290123296_2123057207854740_6680413182665492920_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeF-88ttZEwWqn47Rb6Cgwb4QIXIoEKlbelAhcigQqVt6b79GraAQROaRIfzo00bxcjZxcH4ZiETrJTx-x2SjLK0&_nc_ohc=txxiAksVXyUAX8MjZUR&_nc_oc=AdgL09mTdb9XwHnpe2d5HEsbKGc3DgfsdYdpGw4jXJTgNcLQpsbIQF5GetFh4naMirg&_nc_ht=scontent.fdac110-1.fna&oh=00_AfB5oPJ4z9qGskRdqfjLNmYez4rr4dVS1Ylyl1W7VZUglA&oe=6609BFBD';
 const sliders = [
@@ -38,8 +39,8 @@ const sliders = [
 <template>
   <Carousel>
     <Slide v-for="movie in headerMovieStore" :key="movie">
-      <div class="w-full  relative">
-        <div class="bg-no-repeat w-full h-[750px] absolute  bg-cover bg-blend-multiply bg-violet-400" :style="{'background-image': 'url('+sliders[0].image/*movie.cover*/+')', zIndex: '-1'}"></div>
+      <div :style="{height: height+'px'}" class="w-full relative">
+        <div class="bg-no-repeat w-full h-full absolute  bg-cover bg-blend-multiply bg-violet-400" :style="{'background-image': 'url('+sliders[0].image/*movie.cover*/+')', zIndex: '-1'}"></div>
         <div class="z-20 mt-[150px] pb-[70px]">
           <UContainer>
             <div class="text-white">

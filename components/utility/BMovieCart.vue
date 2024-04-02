@@ -5,7 +5,7 @@ const image = "https://m.media-amazon.com/images/M/MV5BZTc1NDFlN2MtOWFjZi00ZWNmL
 </script>
 
 <template>
-  <div class="hover:opacity-80 rounded-lg cursor-pointer">
+  <NuxtLink :to="'/play/'+props.movie.slug" class="hover:opacity-80 rounded-lg cursor-pointer">
     <NuxtImg class="rounded-lg mt-1 h-[300px] object-cover w-[230px]" :src="props.movie.thumbnail"/>
     <div class="p-2">
       <p class="text-lg font-bold mt-1 line-clamp-1 text-left">{{props.movie.name}}</p>
@@ -22,6 +22,6 @@ const image = "https://m.media-amazon.com/images/M/MV5BZTc1NDFlN2MtOWFjZi00ZWNmL
         </div>
       </div>
     </div>
-  </div>
+  </NuxtLink>
 </template>
 

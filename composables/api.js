@@ -30,9 +30,8 @@ export const getHomepageData = async (categoryName = false) => {
         method: 'GET'
     })
 
-    console.log('res', response)
 
-    categoryWiseMovieStore.value = makeCategoryWiseMovie(response.data);
+    categoryWiseMovieStore.value = makeCategoryWiseMovie(response.data, response.category);
     headerMovieStore.value = makeHeaderMovieStore(response.slider_movies);
 }
 
@@ -44,7 +43,6 @@ export const getCategoryPageData = async (categoryName) => {
         method: 'GET'
     })
 
-
-    categoryWiseMovieStore.value = makeCategoryWiseMovie(response.data);
+    categoryWiseMovieStore.value = makeCategoryWiseMovie(response.data, response.category);
     headerMovieStore.value = makeHeaderMovieStore(response.slider_movies);
 }

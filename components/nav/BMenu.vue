@@ -1,11 +1,11 @@
 <script setup>
-
   import {useMenu} from "~/composables/useMenu.ts";
   const {linksStore} = useMenu();
   const ui = {
     after: '',
-    base:'lg:px-5 py-2 hover:text-violet-950 cursor-pointer uppercase ',
-    before: ''
+    base:'lg:px-5 py-2 hover:text-violet-950 cursor-pointer uppercase',
+    before: '',
+    active: 'font-bold text-violet-950 bg-violet-100'
   }
 </script>
 <template>

@@ -18,19 +18,23 @@ export const useCategoryWiseMovie = () => {
     });
 
 
-    const makeCategoryWiseMovie = (response) => {
+    const makeCategoryWiseMovie = (response, category) => {
         let data = []
         response.forEach(function (item){
-            const category = {
+            //category mean sub category
+            const sub_category = {
+                category_name: category.name,
+                category_slug: category.slug,
                 name: item.name,
                 slug: item.slug,
                 movies: []
             }
 
-            item.movies.forEach(function (movie){
 
+
+            item.movies.forEach(function (movie){
                 if (movie.thumbnail !== ""){
-                    category.movies.push({
+                    sub_category.movies.push({
                         thumbnail: movie.thumbnail,
                         name: movie.name,
                         slug: movie.slug,
@@ -40,7 +44,7 @@ export const useCategoryWiseMovie = () => {
                 }
             })
 
-            data.push(category)
+            data.push(sub_category)
         })
 
         return data;

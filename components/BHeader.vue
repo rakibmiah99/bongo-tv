@@ -4,12 +4,28 @@
   import BSmallNav from "~/components/nav/BSmallNav.vue";
   import BSidebar from "~/components/nav/BSidebar.vue";
   import BIMDB from "~/components/utility/BIMDB.vue";
-
+  import BFixedNav from "~/components/nav/BFixedNav.vue";
+  const is_fixed_nav = ref(false)
+  const {x,y} = useWindowScroll()
+ console.log('x', x)
+ console.log('y', y)
+  onMounted(() => {
+    window.addEventListener('scroll', () => {
+      console.log('c',)
+      if(y.value > 200){
+        is_fixed_nav.value = true;
+      }
+      else if(y.value < 200){
+        is_fixed_nav.value = false;
+      }
+    })
+  })
 
 
 </script>
 
 <template>
+  <BFixedNav v-show="is_fixed_nav"/>
   <div class="relative">
     <div class="absolute z-10 w-full">
       <BNavbar class="hidden md:block"/>
