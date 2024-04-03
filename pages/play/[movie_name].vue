@@ -1,8 +1,7 @@
 <template>
-    <BFixedNav/>
     <UContainer>
-      <div class="player h-[400px] w-full bg-gray-100">
-
+      <div class="player  w-full bg-gray-100 overflow-hidden">
+          <BPlayer/>
       </div>
 
 <!--      Buy Now Section-->
@@ -19,7 +18,7 @@
 
 <!--      Movie Details-->
       <div class="py-6 space-y-3">
-        <div class="flex justify-between">
+        <div  class="flex space-y-3  lg:space-y-0 justify-between flex-col lg:flex-row">
           <h1 class="text-3xl font-bold">When I See Your Face - Chena Chena Lage - S1 E1</h1>
           <div class="social flex space-x-3">
             <UButton icon="i-heroicons-hand-thumb-up" class="text-violet-500 hover:text-white hover:bg-violet-500 bg-violet-50 rounded"/>
@@ -31,9 +30,9 @@
 
 <!--        description-->
         <p class="text-gray-700">2023 • TV Series • 28 Min 27 Sec </p>
-        <div class="flex justify-between text-gray-700">
-          <p>Lumina and Lianju meet for the first time. But can Lumina remember him?</p>
-          <p>Genres: Drama, Romance</p>
+        <div class="flex space-y-3 md:space-y-0 flex-col md:flex-row  flex-wrap justify-between text-gray-700">
+          <p class="basis-1 md:basis-6/12 lg:basis-7/12">Lumina and Lianju meet for the first time. But can Lumina remember him?</p>
+          <p class="basis-1 text-left md:basis-6/12 lg:basis-5/12 md:text-right">Genres: Drama, Romance</p>
         </div>
 
 <!--        tabs-->
@@ -48,81 +47,48 @@
             <template #episod="{item}">
               <div>
                 <NuxtLink class="flex space-x-3 border-b p-3 even:bg-violet-50">
-                  <NuxtImg width="200" src="https://cdn.bongo-solutions.com/abfea462-f64d-491e-9cd9-75ee001f45b0/content/79e519c5-47e0-4a29-916b-c2032f225ad7/fdc1fe99-82c1-4987-8127-dc1bd19bbbe5.jpg"/>
-                  <div>
-                    <h1 class="text-xl font-bold">When I See Your Face - Chena Chena Lage - S1 E1</h1>
-                    <p>Lumina and Lianju meet for the first time. But can Lumina remember him?</p>
-                  </div>
-                </NuxtLink>
-                <NuxtLink class="flex space-x-3 border-b p-3 even:bg-violet-50">
-                  <NuxtImg width="200" src="https://cdn.bongo-solutions.com/abfea462-f64d-491e-9cd9-75ee001f45b0/content/79e519c5-47e0-4a29-916b-c2032f225ad7/fdc1fe99-82c1-4987-8127-dc1bd19bbbe5.jpg"/>
-                  <div>
-                    <h1 class="text-xl font-bold">When I See Your Face - Chena Chena Lage - S1 E1</h1>
-                    <p>Lumina and Lianju meet for the first time. But can Lumina remember him?</p>
-                  </div>
-                </NuxtLink>
-                <NuxtLink class="flex space-x-3 border-b p-3 even:bg-violet-50">
-                  <NuxtImg width="200" src="https://cdn.bongo-solutions.com/abfea462-f64d-491e-9cd9-75ee001f45b0/content/79e519c5-47e0-4a29-916b-c2032f225ad7/fdc1fe99-82c1-4987-8127-dc1bd19bbbe5.jpg"/>
-                  <div>
-                    <h1 class="text-xl font-bold">When I See Your Face - Chena Chena Lage - S1 E1</h1>
-                    <p>Lumina and Lianju meet for the first time. But can Lumina remember him?</p>
-                  </div>
-                </NuxtLink>
-                <NuxtLink class="flex space-x-3 border-b p-3 even:bg-violet-50">
-                  <NuxtImg width="200" src="https://cdn.bongo-solutions.com/abfea462-f64d-491e-9cd9-75ee001f45b0/content/79e519c5-47e0-4a29-916b-c2032f225ad7/fdc1fe99-82c1-4987-8127-dc1bd19bbbe5.jpg"/>
-                  <div>
-                    <h1 class="text-xl font-bold">When I See Your Face - Chena Chena Lage - S1 E1</h1>
-                    <p>Lumina and Lianju meet for the first time. But can Lumina remember him?</p>
-                  </div>
-                </NuxtLink>
-                <NuxtLink class="flex space-x-3 border-b p-3 even:bg-violet-50">
-                  <NuxtImg width="200" src="https://cdn.bongo-solutions.com/abfea462-f64d-491e-9cd9-75ee001f45b0/content/79e519c5-47e0-4a29-916b-c2032f225ad7/fdc1fe99-82c1-4987-8127-dc1bd19bbbe5.jpg"/>
-                  <div>
-                    <h1 class="text-xl font-bold">When I See Your Face - Chena Chena Lage - S1 E1</h1>
-                    <p>Lumina and Lianju meet for the first time. But can Lumina remember him?</p>
-                  </div>
-                </NuxtLink>
-                <NuxtLink class="flex space-x-3 border-b p-3 even:bg-violet-50">
-                  <NuxtImg width="200" src="https://cdn.bongo-solutions.com/abfea462-f64d-491e-9cd9-75ee001f45b0/content/79e519c5-47e0-4a29-916b-c2032f225ad7/fdc1fe99-82c1-4987-8127-dc1bd19bbbe5.jpg"/>
-                  <div>
-                    <h1 class="text-xl font-bold">When I See Your Face - Chena Chena Lage - S1 E1</h1>
-                    <p>Lumina and Lianju meet for the first time. But can Lumina remember him?</p>
-                  </div>
-                </NuxtLink>
-                <NuxtLink class="flex space-x-3 border-b p-3 even:bg-violet-50">
-                  <NuxtImg width="200" src="https://cdn.bongo-solutions.com/abfea462-f64d-491e-9cd9-75ee001f45b0/content/79e519c5-47e0-4a29-916b-c2032f225ad7/fdc1fe99-82c1-4987-8127-dc1bd19bbbe5.jpg"/>
-                  <div>
-                    <h1 class="text-xl font-bold">When I See Your Face - Chena Chena Lage - S1 E1</h1>
-                    <p>Lumina and Lianju meet for the first time. But can Lumina remember him?</p>
-                  </div>
-                </NuxtLink>
-                <NuxtLink class="flex space-x-3 border-b p-3 even:bg-violet-50">
-                  <NuxtImg width="200" src="https://cdn.bongo-solutions.com/abfea462-f64d-491e-9cd9-75ee001f45b0/content/79e519c5-47e0-4a29-916b-c2032f225ad7/fdc1fe99-82c1-4987-8127-dc1bd19bbbe5.jpg"/>
-                  <div>
-                    <h1 class="text-xl font-bold">When I See Your Face - Chena Chena Lage - S1 E1</h1>
-                    <p>Lumina and Lianju meet for the first time. But can Lumina remember him?</p>
-                  </div>
-                </NuxtLink>
-                <NuxtLink class="flex space-x-3 border-b p-3 even:bg-violet-50">
-                  <NuxtImg width="200" src="https://cdn.bongo-solutions.com/abfea462-f64d-491e-9cd9-75ee001f45b0/content/79e519c5-47e0-4a29-916b-c2032f225ad7/fdc1fe99-82c1-4987-8127-dc1bd19bbbe5.jpg"/>
-                  <div>
-                    <h1 class="text-xl font-bold">When I See Your Face - Chena Chena Lage - S1 E1</h1>
-                    <p>Lumina and Lianju meet for the first time. But can Lumina remember him?</p>
+                  <NuxtImg class="w-[150px] sm:w-[150px] md:w-[200px]" src="https://cdn.bongo-solutions.com/abfea462-f64d-491e-9cd9-75ee001f45b0/content/79e519c5-47e0-4a29-916b-c2032f225ad7/fdc1fe99-82c1-4987-8127-dc1bd19bbbe5.jpg"/>
+                  <div class="flex flex-col space-y-1">
+                    <h1 class="text-md md:text-lg lg:text-xl font-bold">When I See Your Face - Chena Chena Lage - S1 E1</h1>
+                    <p class="text-sm sm:text-md text-gray-700">Lumina and Lianju meet for the first time. But can Lumina remember him?</p>
                   </div>
                 </NuxtLink>
               </div>
 <!--              <p class="text-2xl">{{item.content}}</p>-->
             </template>
 
+
+            <template #more>
+              <div class="flex flex-wrap">
+                <NuxtLink class="basis-1/3 sm:basis-1/3 md:basis-1/4 lg:basis-1/5 xl:basis-1/6 rounded-sm hover:opacity-70 p-2">
+                  <NuxtImg class="bg-violet-50 p-1 rounded-sm" src="https://cdn.bongo-solutions.com/abfea462-f64d-491e-9cd9-75ee001f45b0/content/79e519c5-47e0-4a29-916b-c2032f225ad7/fdc1fe99-82c1-4987-8127-dc1bd19bbbe5.jpg"/>
+                </NuxtLink>
+                <NuxtLink class="basis-1/3 sm:basis-1/3 md:basis-1/4 lg:basis-1/5 xl:basis-1/6 rounded-sm hover:opacity-70 p-2">
+                  <NuxtImg class="bg-violet-50 p-1 rounded-sm" src="https://cdn.bongo-solutions.com/abfea462-f64d-491e-9cd9-75ee001f45b0/content/79e519c5-47e0-4a29-916b-c2032f225ad7/fdc1fe99-82c1-4987-8127-dc1bd19bbbe5.jpg"/>
+                </NuxtLink>
+                <NuxtLink class="basis-1/3 sm:basis-1/3 md:basis-1/4 lg:basis-1/5 xl:basis-1/6 rounded-sm hover:opacity-70 p-2">
+                  <NuxtImg class="bg-violet-50 p-1 rounded-sm" src="https://cdn.bongo-solutions.com/abfea462-f64d-491e-9cd9-75ee001f45b0/content/79e519c5-47e0-4a29-916b-c2032f225ad7/fdc1fe99-82c1-4987-8127-dc1bd19bbbe5.jpg"/>
+                </NuxtLink>
+                <NuxtLink class="basis-1/3 sm:basis-1/3 md:basis-1/4 lg:basis-1/5 xl:basis-1/6 rounded-sm hover:opacity-70 p-2">
+                  <NuxtImg class="bg-violet-50 p-1 rounded-sm" src="https://cdn.bongo-solutions.com/abfea462-f64d-491e-9cd9-75ee001f45b0/content/79e519c5-47e0-4a29-916b-c2032f225ad7/fdc1fe99-82c1-4987-8127-dc1bd19bbbe5.jpg"/>
+                </NuxtLink>
+                <NuxtLink class="basis-1/3 sm:basis-1/3 md:basis-1/4 lg:basis-1/5 xl:basis-1/6 rounded-sm hover:opacity-70 p-2">
+                  <NuxtImg class="bg-violet-50 p-1 rounded-sm" src="https://cdn.bongo-solutions.com/abfea462-f64d-491e-9cd9-75ee001f45b0/content/79e519c5-47e0-4a29-916b-c2032f225ad7/fdc1fe99-82c1-4987-8127-dc1bd19bbbe5.jpg"/>
+                </NuxtLink>
+              </div>
+            </template>
           </UTabs>
         </div>
       </div>
     </UContainer>
-    <BFooter/>
 </template>
 <script setup lang="ts">
 import BFixedNav from "~/components/nav/BFixedNav.vue";
-
+import BPlayer from "~/components/BPlayer.vue";
+import {definePageMeta} from "#imports";
+definePageMeta({
+  layout: 'fixed-nav-layout'
+})
 const uiConfig = {
   wrapper: 'relative space-y-2',
   container: 'relative w-full py-5',

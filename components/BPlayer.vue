@@ -1,24 +1,3 @@
-<template>
-<!--
-<div class="plyr__video-embed" :data-plyr-config="config" id="player">
-  <iframe
-      src="https://www.youtube.com/embed/bTqVqk7FSmY?origin=https://plyr.io&amp;iv_load_policy=3&amp;modestbranding=1&amp;playsinline=1&amp;showinfo=0&amp;rel=0&amp;enablejsapi=1"
-      allowfullscreen
-      allowtransparency
-      allow="autoplay"
-  ></iframe>
-</div>
-  -->
-
-  <video id="player" controls :data-plyr-config="config" >
-    <source
-        type="application/x-mpegURL"
-        :src="hls_type_video"
-    >
-  </video>
-
-
-</template>
 <script setup>
 const video = "http://10.16.100.212/iccftps12/iccftps12sasd1/Movies/Hindi/Murder%20Mubarak%20(2024)%20720p%20WEBRip.mp4";
 const video_w3 = "https://www.w3schools.com/html/mov_bbb.mp4";
@@ -29,23 +8,23 @@ const config = JSON.stringify({
   enabled: true,
   debug: true,
   controls: [
-      'play-large',
-      'play',
-      'progress',
-      'current-time',
-      'settings',
-      'download',
-      'fast-forward',
-      'rewind',
-      'duration',
-      'restart',
-      'captions',
+    'play-large',
+    'play',
+    'progress',
+    'current-time',
+    'settings',
+    'download',
+    'fast-forward',
+    'rewind',
+    'duration',
+    'restart',
+    'captions',
   ],
   settings: [
-      'captions',
-      'quality',
-      'speed',
-      'loop'
+    'captions',
+    'quality',
+    'speed',
+    'loop'
   ],
   i18n: {
     restart: 'segsd',
@@ -60,21 +39,7 @@ const config = JSON.stringify({
 
 })
 
-useHead({
-  style: {
-    rel: "text/css",
-    type: "stylesheet",
-    href: 'https://cdn.plyr.io/3.7.8/plyr.css'
-  },
-  script: [
-    {
-      src: 'https://cdn.jsdelivr.net/npm/hls.js'
-    },
-    {
-      src: 'https://cdn.plyr.io/3.7.8/plyr.js'
-    }
-  ]
-})
+
 onMounted( () => {
   const video = document.querySelector("video");
   const source = video.getElementsByTagName("source")[0].src;
@@ -123,10 +88,31 @@ onMounted( () => {
       }
     });
   }
-
   // const player = new Plyr('#player')
 
 })
 
 
+
+
 </script>
+
+
+<template>
+  <div class="">
+    <video id="player" controls :data-plyr-config="config" >
+      <source
+          type="application/x-mpegURL"
+          :src="hls_type_video"
+      >
+    </video>
+  </div>
+
+
+</template>
+
+<style scoped>
+  .player {
+    --plyr-color-main: #1ac266;
+  }
+</style>

@@ -7,11 +7,8 @@
   import BFixedNav from "~/components/nav/BFixedNav.vue";
   const is_fixed_nav = ref(false)
   const {x,y} = useWindowScroll()
- console.log('x', x)
- console.log('y', y)
   onMounted(() => {
     window.addEventListener('scroll', () => {
-      console.log('c',)
       if(y.value > 200){
         is_fixed_nav.value = true;
       }
@@ -25,7 +22,7 @@
 </script>
 
 <template>
-  <BFixedNav v-show="is_fixed_nav"/>
+  <BFixedNav class="block md:sticky" v-show="is_fixed_nav"/>
   <div class="relative">
     <div class="absolute z-10 w-full">
       <BNavbar class="hidden md:block"/>

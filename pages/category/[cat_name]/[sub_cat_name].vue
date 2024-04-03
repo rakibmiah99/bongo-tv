@@ -12,26 +12,14 @@
       </template>
     </UBreadcrumb>
     <div class="flex mt-5 flex-wrap">
-      <BMovieCart class="p-2 basis-1/5 border-b " :movie="movie"></BMovieCart>
-      <BMovieCart class="p-2 basis-1/5 border-b " :movie="movie"></BMovieCart>
-      <BMovieCart class="p-2 basis-1/5 border-b " :movie="movie"></BMovieCart>
-      <BMovieCart class="p-2 basis-1/5 border-b " :movie="movie"></BMovieCart>
-      <BMovieCart class="p-2 basis-1/5 border-b " :movie="movie"></BMovieCart>
-      <BMovieCart class="p-2 basis-1/5 border-b " :movie="movie"></BMovieCart>
-      <BMovieCart class="p-2 basis-1/5 border-b " :movie="movie"></BMovieCart>
-      <BMovieCart class="p-2 basis-1/5 border-b " :movie="movie"></BMovieCart>
-      <BMovieCart class="p-2 basis-1/5 border-b " :movie="movie"></BMovieCart>
-      <BMovieCart class="p-2 basis-1/5 border-b " :movie="movie"></BMovieCart>
-      <BMovieCart class="p-2 basis-1/5 border-b " :movie="movie"></BMovieCart>
-      <BMovieCart class="p-2 basis-1/5 border-b " :movie="movie"></BMovieCart>
-      <BMovieCart class="p-2 basis-1/5 border-b " :movie="movie"></BMovieCart>
-      <BMovieCart class="p-2 basis-1/5 border-b " :movie="movie"></BMovieCart>
-      <BMovieCart class="p-2 basis-1/5 border-b " :movie="movie"></BMovieCart>
-      <BMovieCart class="p-2 basis-1/5 border-b " :movie="movie"></BMovieCart>
-      <BMovieCart class="p-2 basis-1/5 border-b " :movie="movie"></BMovieCart>
-      <BMovieCart class="p-2 basis-1/5 border-b " :movie="movie"></BMovieCart>
-      <BMovieCart class="p-2 basis-1/5 border-b " :movie="movie"></BMovieCart>
-      <BMovieCart class="p-2 basis-1/5 border-b " :movie="movie"></BMovieCart>
+      <BMovieCart class="p-2  basis-1/2 sm:basis-1/3 md:basis-1/3 lg:basis-1/4 xl:basis-1/5 border-b " :movie="movie"></BMovieCart>
+      <BMovieCart class="p-2  basis-1/2 sm:basis-1/3 md:basis-1/3 lg:basis-1/4 xl:basis-1/5 border-b " :movie="movie"></BMovieCart>
+      <BMovieCart class="p-2  basis-1/2 sm:basis-1/3 md:basis-1/3 lg:basis-1/4 xl:basis-1/5 border-b " :movie="movie"></BMovieCart>
+      <BMovieCart class="p-2  basis-1/2 sm:basis-1/3 md:basis-1/3 lg:basis-1/4 xl:basis-1/5 border-b " :movie="movie"></BMovieCart>
+      <BMovieCart class="p-2  basis-1/2 sm:basis-1/3 md:basis-1/3 lg:basis-1/4 xl:basis-1/5 border-b " :movie="movie"></BMovieCart>
+      <BMovieCart class="p-2  basis-1/2 sm:basis-1/3 md:basis-1/3 lg:basis-1/4 xl:basis-1/5 border-b " :movie="movie"></BMovieCart>
+      <BMovieCart class="p-2  basis-1/2 sm:basis-1/3 md:basis-1/3 lg:basis-1/4 xl:basis-1/5 border-b " :movie="movie"></BMovieCart>
+      <BMovieCart class="p-2  basis-1/2 sm:basis-1/3 md:basis-1/3 lg:basis-1/4 xl:basis-1/5 border-b " :movie="movie"></BMovieCart>
     </div>
   </UContainer>
 

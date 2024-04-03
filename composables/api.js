@@ -30,9 +30,9 @@ export const getHomepageData = async (categoryName = false) => {
         method: 'GET'
     })
 
-
-    categoryWiseMovieStore.value = makeCategoryWiseMovie(response.data, response.category);
-    headerMovieStore.value = makeHeaderMovieStore(response.slider_movies);
+    const data = response.data
+    categoryWiseMovieStore.value = makeCategoryWiseMovie(data.sub_category_and_movies, data.category);
+    headerMovieStore.value = makeHeaderMovieStore(data.slider_movies);
 }
 
 
@@ -42,7 +42,7 @@ export const getCategoryPageData = async (categoryName) => {
     const response = await callApi('/category/'+categoryName, {
         method: 'GET'
     })
-
-    categoryWiseMovieStore.value = makeCategoryWiseMovie(response.data, response.category);
-    headerMovieStore.value = makeHeaderMovieStore(response.slider_movies);
+    const data = response.data
+    categoryWiseMovieStore.value = makeCategoryWiseMovie(data.sub_category_and_movies, data.category);
+    headerMovieStore.value = makeHeaderMovieStore(data.slider_movies);
 }

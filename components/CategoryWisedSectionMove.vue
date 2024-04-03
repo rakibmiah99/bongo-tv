@@ -22,14 +22,18 @@ import BMovieCart from "~/components/utility/BMovieCart.vue";
 const props = defineProps(['data'])
 
 const settings =  {
-  itemsToShow: 1,
+  itemsToShow: 2,
   snapAlign: 'center',
 }
 
 const breakpoints = {
   // 700px and up
-  700: {
-    itemsToShow: 3.5,
+  640: {
+    itemsToShow: 3,
+    snapAlign: 'center',
+  },
+  768: {
+    itemsToShow: 4,
     snapAlign: 'center',
   },
   // 1024 and up

@@ -39,10 +39,10 @@
 
     const player = videojs('my-video');
     player.src({
-      // src: 'https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8',
-      src: 'http://127.0.0.1:8000/secrets/video.m3u8',
+      src: 'https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8',
+      // src: 'http://127.0.0.1:8000/secrets/video.m3u8',
       type: 'application/x-mpegURL',
-      withCredentials: true
+      withCredentials: false
     })
   })
 </script>
