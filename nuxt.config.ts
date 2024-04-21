@@ -2,13 +2,8 @@
 // @ts-ignore
 export default defineNuxtConfig({
   devtools: { enabled: true },
-  modules: [
-    // '@nuxtjs/tailwindcss',
-    '@nuxt/ui',
-    'vue3-carousel-nuxt',
-    '@nuxt/image',
-    '@vueuse/nuxt'
-  ],
+  modules: [// '@nuxtjs/tailwindcss',
+  '@nuxt/ui', 'vue3-carousel-nuxt', '@nuxt/image', '@vueuse/nuxt', "@sidebase/nuxt-auth"],
   postcss: {
     plugins: {
       tailwindcss: {},
