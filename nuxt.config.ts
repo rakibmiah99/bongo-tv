@@ -1,9 +1,26 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 // @ts-ignore
+// @ts-ignore
+// @ts-ignore
 export default defineNuxtConfig({
   devtools: { enabled: true },
-  modules: [// '@nuxtjs/tailwindcss',
-  '@nuxt/ui', 'vue3-carousel-nuxt', '@nuxt/image', '@vueuse/nuxt', "@sidebase/nuxt-auth"],
+  experimental: {
+      // componentIslands: true
+  },
+  modules: [
+    // '@nuxtjs/tailwindcss',
+    '@nuxt/ui',
+    'vue3-carousel-nuxt',
+    '@nuxt/image',
+    '@vueuse/nuxt',
+    "@sidebase/nuxt-auth",
+  ],
+  auth:{
+    baseURL: 'api/auth',//process.env.API_BASE_URL,
+    provider: {      
+      type: 'authjs',      
+    }
+  },
   postcss: {
     plugins: {
       tailwindcss: {},

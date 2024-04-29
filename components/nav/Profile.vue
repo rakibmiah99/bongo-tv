@@ -1,32 +1,50 @@
 <script setup>
-
+  const {data,signOut} = useAuth();
+  const user = data.value.user;
   const items = [
     [{
-      label: 'ben@example.com',
+      label: user.name ?? 'ben@example.com',
       slot: 'account',
       disabled: true
-    }], [{
+    }], 
+    [{
+      label: 'Account',
+      icon: 'i-heroicons-user-circle',
+      to: '/account'
+    }],
+    [{
+      label: 'Library',
+      icon: 'i-heroicons-list-bullet',
+      to: '/account/library'
+    }],
+    [{
+      label: 'Watch History',
+      icon: 'i-heroicons-arrow-path',
+      to: '/account/history'
+    }],
+    [{
+      label: 'Payment History',
+      icon: 'i-heroicons-currency-dollar',
+      to: '/account/payments'
+    }],
+    [{
       label: 'Settings',
-      icon: 'i-heroicons-cog-8-tooth'
-    }], [{
-      label: 'Documentation',
-      icon: 'i-heroicons-book-open'
-    }, {
-      label: 'Changelog',
-      icon: 'i-heroicons-megaphone'
-    }, {
-      label: 'Status',
-      icon: 'i-heroicons-signal'
-    }], [{
-      label: 'Sign out',
-      icon: 'i-heroicons-arrow-left-on-rectangle'
+      icon: 'i-heroicons-cog-8-tooth',
+      to: '/account/settings'
+    }],
+    [{
+        label: 'Sign out',
+        icon: 'i-heroicons-arrow-uturn-left',
+        click: () => {
+          signOut({callbackUrl: '/auth'})
+        }
     }]
   ]
 
 </script>
 <template>
   <UDropdown :items="items" :ui="{ item: { disabled: 'cursor-text select-text' } }" :popper="{ placement: 'bottom-start' }">
-    <UAvatar src="https://avatars.githubusercontent.com/u/739984?v=4" />
+    <UAvatar :src="user?.image ?? 'https://avatars.githubusercontent.com/u/739984?v=4'" />
 
     <template #account="{ item }">
       <div class="text-left">

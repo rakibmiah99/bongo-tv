@@ -6,33 +6,34 @@ const links = [
     {
       label: 'Account',
       icon: 'i-heroicons-user-circle',
-      to: '/getting-started/installation'
+      to: '/account'
     },
     {
       label: 'Library',
       icon: 'i-heroicons-list-bullet',
-      to: `${route.path.startsWith('/dev') ? '/dev' : ''}/components/vertical-navigation`
+      to: '/account/library'
     },
     {
       label: 'Watch History',
       icon: 'i-heroicons-arrow-path',
-      to: '/components/command-palette'
+      to: '/account/history'
     },
     {
       label: 'Package',
       icon: 'i-heroicons-squares-2x2',
-      to: '/components/command-palette'
+      to: '/account/package'
     },
     {
       label: 'Payment History',
       icon: 'i-heroicons-currency-dollar',
-      to: '/components/command-palette'
+      to: '/account/payments'
     }
   ],
   [
     {
       label: 'Settings',
-      icon: 'i-heroicons-cog-6-tooth'
+      icon: 'i-heroicons-cog-6-tooth',
+      to: '/account/settings'
     },
     {
       label: 'Logout',

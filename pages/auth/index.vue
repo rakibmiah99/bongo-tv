@@ -8,15 +8,18 @@
               </h1>
               <p class="text-center mt-1 text-sm">Stay with us and enjoy your life!</p>
             </div>
-
+            <ProviderGithub/>
             <div class="login-form mt-7">
               <UForm :validate="validate" :state="state" class="space-y-4" @submit="onSubmit">
-                <UFormGroup label="Email" name="email">
+<!--                <UFormGroup label="Email" name="email">
                   <UInput color="violet" v-model="state.email" />
                 </UFormGroup>
 
                 <UFormGroup label="Password" name="password">
                   <UInput color="violet" v-model="state.password" type="password" />
+                </UFormGroup>-->
+                <UFormGroup label="phone" name="phone">
+                  <UInput color="violet" v-model="state.phone" type="text" />
                 </UFormGroup>
                 <UFormGroup>
                   <div class="flex space-x-2 items-center">
@@ -37,21 +40,51 @@
     </div>
 </template>
 <script setup>
-  const state = reactive({
-    email: undefined,
-    password: undefined
+
+
+  definePageMeta({
+    auth: {
+      unauthenticatedOnly: true,
+    }
+
+
   })
+
+  const { data, getSession} = useAuth();
+  // console.log('', status)
+  // console.log('session',await getSession())
+  // console.log('data', data.value)
+  const state = reactive({
+    // email: undefined,
+    // password: undefined,
+    phone: undefined
+  })
+
 
   const validate = (state) => {
     const errors = []
-    if (!state.email) errors.push({ path: 'email', message: 'Required' })
-    if (!state.password) errors.push({ path: 'password', message: 'Required' })
+    // if (!state.email) errors.push({ path: 'email', message: 'Required' })
+    // if (!state.password) errors.push({ path: 'password', message: 'Required' })
+    if (!state.phone) errors.push({ path: 'phone', message: 'Required' })
     return errors
   }
 
   async function onSubmit (event) {
     // Do something with data
-    console.log(event.data)
+    const {signIn} = useAuth();
+      const { error, url } = await signIn('credentials', {
+        phone: state.phone,
+        redirect: false,
+        callbackUrl: '/'
+      })
+      if (error) {
+        // Do your custom error handling here
+        console.log(error)
+        alert('You have made a terrible mistake while entering your credentials')
+      } else {
+        // No error, continue with the sign in, e.g., by following the returned redirect:
+        return navigateTo(url, { external: true })
+      }
   }
 
   const bodyStyle = {

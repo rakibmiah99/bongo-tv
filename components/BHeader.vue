@@ -29,7 +29,7 @@
       <BSmallNav class="block md:hidden px-3"/>
     </div>
 
-    <HeaderSlider/>
+<!--    <HeaderSlider/>-->
 
 
 
