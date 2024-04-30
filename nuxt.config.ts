@@ -16,7 +16,9 @@ export default defineNuxtConfig({
     "@sidebase/nuxt-auth",
   ],
   auth:{
-    baseURL: 'api/auth',//process.env.API_BASE_URL,
+    origin: 'https://bongo-tv.vercel.app',
+    baseURL: 'api/auth',
+    // baseURL: process.env.API_BASE_URL,
     provider: {      
       type: 'authjs',      
     }
