@@ -38,3 +38,4 @@ const containerConfig = {
     </div>
   </UContainer>
 </template>
+~/composabless/useUtility

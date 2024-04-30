@@ -60,4 +60,4 @@ const ui = {
       </UVerticalNavigation>
     </div>
   </USlideover>
-</template>
+</template>~/composabless/useUtility.js

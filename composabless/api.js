@@ -1,6 +1,6 @@
-import {useMenu} from "~/composables/useMenu.ts";
-import {useCategoryWiseMovie} from "~/composables/useCategoryWiseMovie.js";
-import {useSliderHeaderMovie} from "~/composables/useSliderHeaderMovie.js";
+import {useMenu} from "~/composabless/useMenu";
+import {useCategoryWiseMovie} from "~/composabless/useCategoryWiseMovie.js";
+import {useSliderHeaderMovie} from "~/composabless/useSliderHeaderMovie.js";
 export const callApi = async (endpoint, options) => {
     const {$base_url} = useNuxtApp();
     try{

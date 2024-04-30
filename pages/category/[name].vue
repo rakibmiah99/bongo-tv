@@ -20,3 +20,4 @@ const {categoryWiseMovieStore, makeCategoryWiseMovie} = useCategoryWiseMovie();
 onMounted(() => getCategoryPageData(route.params.name))
 
 </script>
+~/composabless/useCategoryWiseMovie.js~/composabless/api.js

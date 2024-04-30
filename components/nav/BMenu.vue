@@ -16,4 +16,4 @@
       </template>
     </UHorizontalNavigation>
   </div>
-</template>
+</template>~/composabless/useMenu
