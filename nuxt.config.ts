@@ -13,7 +13,7 @@ export default defineNuxtConfig({
     'vue3-carousel-nuxt',
     '@nuxt/image',
     '@vueuse/nuxt',
-    "@sidebase/nuxt-auth",
+    // "@sidebase/nuxt-auth",
   ],
   auth:{
     baseURL: 'api/auth',//process.env.API_BASE_URL,
