@@ -17,8 +17,8 @@ import Footer from "~/components/BFooter.vue";
 // import {getHomepageData} from "~/composables/api.js";
 // import BFixedNav from "~/components/nav/BFixedNav.vue";
 
-// const {categoryWiseMovieStore, makeCategoryWiseMovie} = useCategoryWiseMovie();
+const {categoryWiseMovieStore, makeCategoryWiseMovie} = useCategoryWiseMovie();
 
-// onMounted(() => getHomepageData())
+onMounted(() => getHomepageData())
 
 </script>
