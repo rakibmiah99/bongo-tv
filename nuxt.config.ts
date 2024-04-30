@@ -13,16 +13,16 @@ export default defineNuxtConfig({
     'vue3-carousel-nuxt',
     '@nuxt/image',
     '@vueuse/nuxt',
-    "@sidebase/nuxt-auth",
+    // "@sidebase/nuxt-auth",
   ],
-  auth:{
-    origin: 'https://bongo-tv.vercel.app',
-    baseURL: 'api/auth',
-    // baseURL: process.env.API_BASE_URL,
-    provider: {      
-      type: 'authjs',      
-    }
-  },
+  // auth:{
+  //   // origin: 'https://bongo-tv.vercel.app',
+  //   baseURL: 'api/auth',
+  //   // baseURL: process.env.API_BASE_URL,
+  //   provider: {      
+  //     type: 'authjs',      
+  //   }
+  // },
   postcss: {
     plugins: {
       tailwindcss: {},

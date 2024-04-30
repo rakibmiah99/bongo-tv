@@ -1,4 +1,4 @@
-import {useMenu} from "~/composables/useMenu.ts";
+import {useMenu} from "~/composables/useMenu";
 import {useCategoryWiseMovie} from "~/composables/useCategoryWiseMovie.js";
 import {useSliderHeaderMovie} from "~/composables/useSliderHeaderMovie.js";
 export const callApi = async (endpoint, options) => {
