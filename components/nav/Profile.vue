@@ -1,9 +1,10 @@
 <script setup>
-  const {data,signOut} = useAuth();
-  const user = data.value.user;
+  // const {data,signOut} = useAuth();
+  // const user = data.value.user;
   const items = [
     [{
-      label: user.name ?? 'ben@example.com',
+      // label: user.name ?? 'ben@example.com',
+      label:  'MD Rakib Miah',
       slot: 'account',
       disabled: true
     }], 
@@ -35,16 +36,16 @@
     [{
         label: 'Sign out',
         icon: 'i-heroicons-arrow-uturn-left',
-        click: () => {
-          signOut({callbackUrl: '/auth'})
-        }
+        // click: () => {
+        //   signOut({callbackUrl: '/auth'})
+        // }
     }]
   ]
 
 </script>
 <template>
   <UDropdown :items="items" :ui="{ item: { disabled: 'cursor-text select-text' } }" :popper="{ placement: 'bottom-start' }">
-    <UAvatar :src="user?.image ?? 'https://avatars.githubusercontent.com/u/739984?v=4'" />
+    <!-- <UAvatar :src="user?.image ?? 'https://avatars.githubusercontent.com/u/739984?v=4'" /> -->
 
     <template #account="{ item }">
       <div class="text-left">

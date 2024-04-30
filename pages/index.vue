@@ -1,6 +1,6 @@
 <template>
 
-  <BHeader/>
+  <!-- <BHeader/> -->
 
   <CategoryWisedSectionMove :data="category" v-for="category in categoryWiseMovieStore"/>
 
