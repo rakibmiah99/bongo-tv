@@ -1,8 +1,8 @@
 <template>
 
-  <BHeader/>
+  <!-- <BHeader/> -->
 
-  <CategoryWisedSectionMove :data="category" v-for="category in categoryWiseMovieStore"/>
+  <!-- <CategoryWisedSectionMove :data="category" v-for="category in categoryWiseMovieStore"/> -->
 
   <div class="py-8">
     <BWatched/>
@@ -13,20 +13,12 @@
 
 <script setup>
 import Footer from "~/components/BFooter.vue";
-import {useCategoryWiseMovie} from "~/composables/useCategoryWiseMovie.js";
-import {getHomepageData} from "~/composables/api.js";
-import BFixedNav from "~/components/nav/BFixedNav.vue";
-definePageMeta({
-  middleware: 'auth'
-})
-const {data, getProviders} = useAuth();
-console.log('providers', await getProviders())
-console.log('data', data.value)
-const {signOut} = useAuth();
-// await signOut();
+// import {useCategoryWiseMovie} from "~/composables/useCategoryWiseMovie.js";
+// import {getHomepageData} from "~/composables/api.js";
+// import BFixedNav from "~/components/nav/BFixedNav.vue";
 
-const {categoryWiseMovieStore, makeCategoryWiseMovie} = useCategoryWiseMovie();
+// const {categoryWiseMovieStore, makeCategoryWiseMovie} = useCategoryWiseMovie();
 
-onMounted(() => getHomepageData())
+// onMounted(() => getHomepageData())
 
 </script>

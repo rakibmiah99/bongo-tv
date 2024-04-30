@@ -1,4 +1,4 @@
-<script setup>
+<!-- <script setup>
   const {data,signOut} = useAuth();
   const user = data.value.user;
   const items = [
@@ -63,4 +63,8 @@
       <UIcon :name="item.icon" class="flex-shrink-0 h-4 w-4 text-gray-400 dark:text-gray-500 ms-auto" />
     </template>
   </UDropdown>
+</template> -->
+
+<template>
+  <p></p>
 </template>
