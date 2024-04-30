@@ -13,9 +13,9 @@
 
 <script setup>
 import Footer from "~/components/BFooter.vue";
-// import {useCategoryWiseMovie} from "~/composables/useCategoryWiseMovie.js";
-// import {getHomepageData} from "~/composables/api.js";
-// import BFixedNav from "~/components/nav/BFixedNav.vue";
+import {useCategoryWiseMovie} from "~/composables/useCategoryWiseMovie.js";
+import {getHomepageData} from "~/composables/api.js";
+import BFixedNav from "~/components/nav/BFixedNav.vue";
 
 const {categoryWiseMovieStore, makeCategoryWiseMovie} = useCategoryWiseMovie();
 
