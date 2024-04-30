@@ -2,7 +2,7 @@
 
   <!-- <BHeader/> -->
 
-  <!-- <CategoryWisedSectionMove :data="category" v-for="category in categoryWiseMovieStore"/> -->
+  <CategoryWisedSectionMove :data="category" v-for="category in categoryWiseMovieStore"/>
 
   <div class="py-8">
     <BWatched/>
